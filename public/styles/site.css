@@ -1,0 +1,135 @@
+/* 
+============================================
+Title: site.css
+Author: Erin Brady
+Date: 4 February 2023
+Description: Global Styling for Portfolio
+============================================
+*/
+
+:root {
+    --primary-color: #266125; /* Header, Buttons, Footer */
+    --accent-color: #9de693; /* Borders, Hover, underlines */
+    --warn-color: #58e055; /* Messages */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: aliceblue;
+}
+
+/* Navbar Styles */
+nav {
+    width: 100vw - 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px 8px 20px;
+    align-items: baseline;
+    background-color: var(--primary-color);
+}
+
+#logo {
+    justify-self: flex-start;
+    font-size: 22px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 65%;
+}
+
+.nav-link {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    color: var(--accent-color);
+  }
+
+/* Banners */
+.banner {
+    width: 90vw;
+    height: 60vh;
+    margin-top: 10px;
+    display: flex;
+}
+
+/* Grid layout & Content sections */
+
+.layout {
+    display: grid;
+    width: 95vw;
+    margin: 20px auto;
+}
+
+section {
+    width: 50%;
+    margin: 0 auto 50px;
+    text-align: center;
+    box-shadow: 0 5px 10px lightgray;
+    padding: 10px 30px 20px;
+    background-color: white;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
