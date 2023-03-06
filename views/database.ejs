@@ -37,15 +37,15 @@ Description: Express.js Output for Portfolio API Unit Tests Page
     <%- include('./partials/_footer.ejs') %>
 
     <script>
-            let gridString = ""
+        let gridString = ""
 
-            // Add 9 placeholders to the Databases grid.
-            for(let i = 1; i < 10; i++) {
-                let placeholder = `<img src="https://via.placeholder.com/300x200/cccccc/000000.jpeg?text=WEB+335:+Intro+to+NoSQL+-+Database+Diagram+${i}">`
-                gridString += placeholder
-            }
+        // Add 9 placeholders to the Databases grid.
+        for(let i = 1; i < 10; i++) {
+            let placeholder = `<img src="https://via.placeholder.com/300x200/cccccc/000000.jpeg?text=WEB+335:+Intro+to+NoSQL+-+Database+Diagram+${i}">`
+            gridString += placeholder
+        }
 
-            document.getElementById("databases").innerHTML = gridString
+        document.getElementById("databases").innerHTML = gridString
     </script>
 </body>
 </html>
