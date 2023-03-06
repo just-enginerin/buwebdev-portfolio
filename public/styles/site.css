@@ -21,6 +21,10 @@ body {
     background-color: aliceblue;
 }
 
+.display {
+    font-family: 'Unica One', cursive;
+}
+
 /* Navbar Styles */
 nav, footer {
     width: 100vw - 60px;
@@ -33,7 +37,8 @@ nav, footer {
 
 #logo {
     justify-self: flex-start;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Unica One', cursive;
 }
 
 #nav-links {
@@ -87,13 +92,35 @@ nav, footer {
 
 /* Grid layout & Content sections */
 
-.layout {
+.grid-container {
     display: grid;
-    width: 95vw;
-    margin: 20px auto;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 30% [col-start]);
+    grid-template-rows: repeat(3, 30% [row-start]);
+    grid-gap: 5%;
+    
 }
 
-section {
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col1 {
+    grid-column: 1 / span 1;
+}
+
+.col2 {
+    grid-column: 2 / span 1;
+}
+
+.col3 {
+    grid-column: 3 / span 1;
+}
+
+.card {
     width: 50%;
     margin: 0 auto 50px;
     text-align: center;
