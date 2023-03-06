@@ -1,0 +1,23 @@
+/* 
+============================================
+Title: projects.css
+Author: Erin Brady
+Date: 15 February 2023
+Description: Portfolio: Styling for Projects page
+============================================
+*/
+
+.grid-container {
+    grid-auto-flow: row;
+    place-items: center;
+    column-gap: 0px;
+    row-gap: 0px;
+    margin: 0 auto;
+}
+
+.card {
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
