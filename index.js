@@ -68,18 +68,6 @@ app.get('/tests', (req, res) => {
     })
 })
 
-app.get('/bucket-list', (req, res) => {
-    res.render('bucket-list', {
-        title: 'Bucket List'
-    })
-})
-
-app.get('/links', (req, res) => {
-    res.render('links', {
-        title: 'Quick Links'
-    })
-})
-
 
 /**
  * Starts the server on port 3000.
