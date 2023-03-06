@@ -26,12 +26,26 @@ Description: Express.js Output for Portfolio API Unit Tests Page
     <!-- Navigation Bar -->
     <%- include('./partials/_header.ejs') %>
 
+    <h2>WEB 420: RESTful API's  - API Unit Tests</h2>
+
     <!-- API Unit Tests Page Main Content -->
-    <main>
-    
+    <main id="api-unit-tests" class="9x9-grid">
+        
     </main>
 
     <!-- Footer -->
     <%- include('./partials/_footer.ejs') %>
+
+    <script>
+        let gridString = ""
+
+        // Add 9 placeholders to the API Unit Tests grid.
+        for(let i = 1; i < 10; i++) {
+            let placeholder = `<img src="https://via.placeholder.com/300x200/cccccc/000000.jpeg?text=WEB+420:+RESTful+APIs+-+Unit+Test+${i}">`
+            gridString += placeholder
+        }
+
+        document.getElementById("api-unit-tests").innerHTML = gridString
+    </script>
 </body>
 </html>

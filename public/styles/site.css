@@ -8,13 +8,13 @@ Description: Global Styling for Portfolio
 */
 
 :root {
-    --primary-color: #266125; /* Header, Buttons, Footer */
-    --accent-color: #9de693; /* Borders, Hover, underlines */
-    --warn-color: #58e055; /* Messages */
+    --primary-color: #592B21; /* Header, Buttons, Footer */
+    --accent-color: #DF9E8F; /* Borders, Hover, underlines */
+    --warn-color: #D96B51; /* Messages */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -22,36 +22,37 @@ body {
 }
 
 /* Navbar Styles */
-nav {
+nav, footer {
     width: 100vw - 60px;
     display: flex;
     justify-content: space-between;
-    padding: 8px 20px 8px 20px;
-    align-items: baseline;
+    padding: 15px 20px;
+    align-items: center;
     background-color: var(--primary-color);
 }
 
 #logo {
     justify-self: flex-start;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #nav-links {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    width: 65%;
+    width: 40%;
 }
 
 .nav-link {
     text-decoration: none;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
 }
 
 .nav-link:hover {
     color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .dropdown {

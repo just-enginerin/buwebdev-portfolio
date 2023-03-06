@@ -16,7 +16,7 @@ Description: Express.js Output for Portfolio Landing Page
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="/styles/site.css">
@@ -28,9 +28,15 @@ Description: Express.js Output for Portfolio Landing Page
     <%- include('./partials/_header.ejs') %>
 
     <!-- Landing Page Main Content -->
-    <main>
-        <h2>Erin Brady's Web Development Portfolio</h2>
-        <img src="/images/image0.jpeg" alt="Close-up portrait of Erin smiling in front of a floral mural.">
+    <main style="display: flex; width: 85%; margin: 20px auto; justify-content: space-around; align-items: center;">
+        <img src="/images/image0.jpeg" style="border-radius: 100%; height: 350px;">
+        
+        <div style="width: 40%;">
+            <h4>Welcome to Erin Brady's Web Development Portfolio.</h4>
+            <p>A collection of assignments and projects from Bellevue University's Bachelor of Science degree program in Web Development.</p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1629670222663-349118f2afb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="A subway train zooms past some trees and apartment buildings through the city.">
     </main>
 
     <!-- Footer -->

@@ -26,12 +26,241 @@ Description: Express.js Output for Portfolio Resume Page
     <!-- Navigation Bar -->
     <%- include('./partials/_header.ejs') %>
 
+    <button class="btn-primary" id="downloadPdf" onclick="onButtonClick()">Download Resume</button>
+
     <!-- Resume Page Main Content -->
-    <main>
-    
-    </main>
+    <section class="card">
+        <div>
+            <div>
+                <h1>Erin Brady</h1>
+                <a href="https://github.com/just-enginerin" target="_blank">just-enginerin</a>
+            </div>
+            <h2>App Developer</h2>
+        </div>
+        <br>
+        <div>
+            <h3 class="resume-header">SKILLS</h3>
+            <div class="resume-content">
+                <b>DEVELOPMENT</b>
+                <p>JavaScript (ES6), TypeScript, React.js, Redux, Express JS, MongoDB, Git & GitHub, HTML/CSS, Microsoft Power Apps, Material UI, Bootstrap</p>
+                <b>DESIGN</b>
+                <p>Figma, Adobe Photoshop, Adobe Illustrator, GIMP, Keynote</p>
+            </div>
+        </div>
+        <div>
+            <h3 class="resume-header">EMPLOYMENT</h3>
+            <div class="resume-content">
+                <div class="resume-entry">
+                    <p class="entry-date">Oct. 2020 to Current</p>
+                    <div class="entry-content">
+                        <div class="entry-header">
+                            <h4>Marsh McLennan</h4>
+                            <p class="employment-title">Applications Developer</p>
+                            <p>New York, NY</p>
+                        </div>
+                        <div class="entry-description">
+                            <p>As a member of Marsh McLennan's Corporate Information Solutions (CIS) Innovation team, I actively contribute towards the design, development, testing, and deployment of four distinct Enterprise applications as an integral part of a global company-wide Future of Finance initiative to modernize and automate vital, yet tedious financial tasks.</p>
+                            <ul>My daily responsibilities include:
+                                <br>
+                                <li>
+                                    Front end development: Developing responsive UI and data visualization components in React.js and Microsoft Power Apps according to client specifications and design mockups,
+                                </li>
+                                <li>
+                                    DevOps: Working within an Agile SDLC via daily standups, conducting code reviews, organizing and updating issue logs and scrum boards, and overseeing the routine deployment of applications into the Production environment,
+                                </li>
+                                <li>
+                                    Accessibility: Ensuring front end components follow accessibility best practices such as correct WIA-ARIA attributes and semantic HTML,
+                                </li>
+                                <li>
+                                    UI/UX: Optimizing and redesigning existing applications to meet design and usability standards and constructing wireframes and design prototypes for web and mobile enterprise applications,
+                                </li>
+                                <li>
+                                    User Testing: Conducting user feedback surveys and collecting data on app performance to inform decisions on bugfixes and new features, and
+                                </li>
+                                <li>
+                                    Cross-team Collaboration: Presenting app demos, providing weekly development progress status updates to finance teams with varying levels of technical knowledge, and writing thorough app documentation for application handoff to new developers
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">Aug. 2021 to Current</p>
+                    <div class="entry-content">
+                        <div class="entry-header">
+                            <p class="employment-title">Global Sustainability Green Team - Committee Member</p>
+                        </div>
+                        <div class="entry-description">
+                            <ul>
+                                <li>
+                                    Built and maintains the Sustainability webpage on Marsh McLennan's internal Sharepoint site
+                                </li>
+                                <li>
+                                    Supports ESG Reporting & Sustainability Director in building global colleague engagement around sustainability
+                                </li>
+                                <li>
+                                    Plans global sustainability engagement campaigns and communications
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">Mar. 2020 to Dec. 2020</p>
+                    <div class="entry-content">
+                        <div class="entry-header">
+                            <h4>Borough of Manhattan Community College - CUNY Research Foundation</h4>
+                            <p class="employment-title">Media Arts and Technology Tutor</p>
+                            <p>New York, NY</p>
+                        </div>
+                        <div class="entry-description">
+                            <ul>
+                                <li>
+                                    Tutored students in web programming and graphic design subjects available under the Media Arts and Technology Associate degree program. Subjects include: HTML, CSS, JavaScript and ES6 conventions, as well as Adobe Photoshop, Illustrator and After Effects.
+                                </li>
+                                <li>
+                                    Utilized online teaching platforms and virtual classrooms for providing academic guidance and coaching to 15 students per semester in both individual and group sessions
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">Mar. 2020 to Aug. 2020</p>
+                    <div class="entry-content">
+                        <div class="entry-header">
+                            <h4>Walmart E-Commerce</h4>
+                            <p class="employment-title">Software Developer Intern</p>
+                            <p>Hoboken, NJ</p>
+                        </div>
+                        <div class="entry-description">
+                            <p>As an intern on Walmart's Store Pricing team, I was responsible for the design, development, testing, and deployment of an internal tool called Viewpoint, used by Walmart associates to get key insights into the company's pricing strategies:</p>
+                            <ul>
+                                <li>
+                                    Built dynamic and interactive front-end user interfaces in React.js
+                                </li>
+                                <li>
+                                    Developed data visualization dashboards utilizing AG-Grid and Amcharts libraries
+                                </li>
+                                <li>
+                                    Practiced Scrum Agile Methodology in collaboration with senior engineers (Daily Scrum meetings, Sprint Planning and Backlog, 1x1 meetings)
+                                </li>
+                                <li>
+                                    Presented product demos to my direct colleagues, other teams, and company higher-ups by constructing and demonstrating a use case scenario
+                                </li>
+                                <li>
+                                    Integrated CI/CD workflow into applications using a proprietary pipeline manager
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="resume-header">EDUCATION</h3>
+            <div class="resume-content">
+                <div class="resume-entry">
+                    <p class="entry-date">Aug. 2022 to Current</p>
+                    <div class="entry-content">
+                        <div class="entry-header">
+                            <h4>Bellevue University</h4>
+                        </div>
+                        <div class="entry-description">
+                            <p>Bachelor of Science in Web Development; Class of 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">Sep. 2019 to Aug. 2020</p>
+                    <div class="entry-content">
+                        <div class="entry-header">
+                            <h4>Year Up New York | New Jersey</h4>
+                        </div>
+                        <div class="entry-description">
+                            <p>Software Engineering Apprentice</p>
+                            <ul>
+                                <li>
+                                    Accrued 200+ hours of hands-on training in the Software track as part of a one-year career development program that includes six months of college-level courses and professional training followed by a six-month internship.
+                                </li>
+                                <li>
+                                    Attended networking events at Google, Facebook, and other corporate partners as a participating member of the Women in Technology (WIT) club.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">Jan. 2016 to Aug. 2019</p>
+                    <div class="entry-content">
+                        <div class="entry-header">
+                            <h4>Borough of Manhattan Community College</h4>
+                        </div>
+                        <div class="entry-description">
+                            <p>Associate of Science - Multimedia Programming and Design</p>
+                            <ul>
+                                <li>
+                                    Graduated with 3.66 GPA
+                                </li>
+                                <li>
+                                    Member of the Programming Club: Association for Computing Machinery's Women's Chapter
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="resume-header">AWARDS</h3>
+            <div class="resume-content">
+                <div class="resume-entry">
+                    <p class="entry-date">June 2020</p>
+                        <div class="entry-content">
+                            Borough of Manhattan Community College · Media Arts and Technology Honors
+                        </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">June 2019</p>
+                        <div class="entry-content">
+                            Women in Tech New York (WiTNY) · Collaborative Computing Research Project Grant Winner
+                        </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">Apr. 2019</p>
+                        <div class="entry-content">
+                            Borough of Manhattan Community College · Hack-a-thon 2nd Place Winner
+                        </div>
+                </div>
+                <div class="resume-entry">
+                    <p class="entry-date">Dec. 2018</p>
+                        <div class="entry-content">
+                            Borough of Manhattan Community College · Dean's List
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <%- include('./partials/_footer.ejs') %>
+
+    <script>
+        // Function will execute on click of button
+        const onButtonClick = () => {
+            // using Java Script method to get PDF file
+            fetch('/resume.pdf').then(response => {
+                response.blob().then(blob => {
+                    // Creating new object of PDF file
+                    const fileURL = window.URL.createObjectURL(blob);
+                    // Setting various property values
+                    let alink = document.createElement('a');
+                    alink.href = fileURL;
+                    alink.download = 'Erin_Brady_resume.pdf'
+                    alink.click()
+                })
+            })
+        }
+    </script>
 </body>
 </html>

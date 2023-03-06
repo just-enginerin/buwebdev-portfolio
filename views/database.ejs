@@ -3,7 +3,7 @@
 Title: index.ejs
 Author: Erin Brady
 Date: 4 January 2023
-Description: Express.js Output for Portfolio Database Page
+Description: Express.js Output for Portfolio API Unit Tests Page
 ============================================
 -->
 
@@ -26,12 +26,26 @@ Description: Express.js Output for Portfolio Database Page
     <!-- Navigation Bar -->
     <%- include('./partials/_header.ejs') %>
 
-    <!-- Database Main Content -->
-    <main>
-    
+    <h2>WEB 335: Introduction to NoSQL - Database Diagrams</h2>
+
+    <!-- API Unit Tests Page Main Content -->
+    <main id="databases" class="9x9-grid">
+        
     </main>
 
     <!-- Footer -->
     <%- include('./partials/_footer.ejs') %>
+
+    <script>
+            let gridString = ""
+
+            // Add 9 placeholders to the Databases grid.
+            for(let i = 1; i < 10; i++) {
+                let placeholder = `<img src="https://via.placeholder.com/300x200/cccccc/000000.jpeg?text=WEB+335:+Intro+to+NoSQL+-+Database+Diagram+${i}">`
+                gridString += placeholder
+            }
+
+            document.getElementById("databases").innerHTML = gridString
+    </script>
 </body>
 </html>

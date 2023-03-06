@@ -34,7 +34,7 @@ const PORT = process.env.PORT || 3000;
 // App routes:
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'Pets-R-Us',
+        title: "Erin Brady's Web Development Portfolio",
     })
 })
 
