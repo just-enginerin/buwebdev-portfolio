@@ -1,8 +1,8 @@
 <!-- 
 ============================================
-Title: index.ejs
+Title: about.ejs
 Author: Erin Brady
-Date: 4 January 2023
+Date: 24 February 2023
 Description: Express.js Output for Portfolio About Page
 ============================================
 -->
@@ -21,6 +21,7 @@ Description: Express.js Output for Portfolio About Page
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="/styles/about.css">
 </head>
 <body>
 
@@ -28,18 +29,19 @@ Description: Express.js Output for Portfolio About Page
     <%- include('./partials/_header.ejs') %>
 
     <!-- About Page Main Content -->
-    <main>
-        <div id="bio">
-            <p>Hi! I'm Erin Brady; a twenty-six year old living her best life in New York City.</p>
+    <main class="grid-container">
+        <div class="col col1"></div>
+        
+        <div class="col col2">
+            <h1 class="display">About Me</h1>
+            <p>Hi again! If you're curious to know more about me, I'm a twenty-six year old living her best life in New York City.</p>
                 
             <p>I am currently an Applications Developer specializing in Front End web development on Marsh McLennan's Corporate Information Solutions (CIS) Innovation team. I work to develop and optimize the design and usability of Global Finance Enterprise applications as part of an integral initiative to modernize and automate cumbersome financial processes. Additionally, I am studying Web Development at Bellevue University's accelerated online Bachelor's degree program.</p>
 
-            <p>In my free time, I prefer to disconnect from screens by hiking through New York and New Jersey's parks and trailways. I enjoy to wander through the woods either by myself, with my partner or as a member of a local hiking group for women of color. On my hikes I'll usually be birdwatching, foraging, and sometimes climbing! When I'm not immersed in nature, I'll be exploring one of the city's many museums, art galleries, libraries, vintage shops, or family-owned restaurants. At home, I enjoy reading, cooking and playing video games like League of Legends.</p>
+            <p>In my free time, I prefer to disconnect from screens by hiking through New York and New Jersey's parks and trailways. I enjoy wandering through the woods either by myself, with my partner or as a member of a local hiking group for women of color. On my hikes I'll usually be birdwatching, foraging, and sometimes climbing! When I'm not immersed in nature, I love exploring the city's many museums, art galleries, libraries, vintage shops, and family-owned restaurants. At home, I like to read, cook, and play video games on my PC or PS4.</p>
         </div>
 
-        <img src="/images/image2.jpeg">
-        <img src="/images/image1.jpeg">
-        <img src="/images/image4.jpeg">
+        <div class="col col3"></div>
     </main>
 
     <!-- Footer -->

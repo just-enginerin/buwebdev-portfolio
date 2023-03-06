@@ -1,0 +1,33 @@
+/* 
+============================================
+Title: about.css
+Author: Erin Brady
+Date: 24 February 2023
+Description: Portfolio: Styling for About page
+============================================
+*/
+
+.col {
+    height: 100vh;
+}
+
+.col1 {
+    background: rgba(250, 250, 250, .5) url("/images/image2.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+.col2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col3 {
+    background: rgba(250, 250, 250, .5) url("/images/image1.jpeg") no-repeat center center;
+    background-size: cover;
+} 
+
+.display {
+    font-size: 50px;
+    font-weight: 200;
+}
