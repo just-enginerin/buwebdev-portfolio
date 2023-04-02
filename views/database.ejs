@@ -40,11 +40,16 @@ Description: Express.js Output for Portfolio API Unit Tests Page
     <script>
         let gridString = ""
 
-        gridString += `<img src="/images/database_diagrams/3.2-1.png" height="200" alt="Database Diagram for Assignment 3.2">`
+        // Assignment 2.2
+        gridString += `<img src="/images/database_diagrams/2.2-1.png" height="200" alt="Database Diagram for Assignment 2.2">`
+        gridString += `<img src="/images/database_diagrams/2.2-2.png" height="200" alt="Database Diagram for Assignment 2.2">`
+
+        // Assignment 3.2
+        gridString += `<img src="/images/database_diagrams/3.2-1.png" width="500" alt="Database Diagram for Assignment 3.2">`
         gridString += `<img src="/images/database_diagrams/3.2-2.png" height="200" alt="Database Diagram for Assignment 3.2">`
 
         // Add 9 placeholders to the Databases grid.
-        for(let i = 1; i < 8; i++) {
+        for(let i = 5; i < 10; i++) {
             let placeholder = `<img src="https://via.placeholder.com/300x200/cccccc/000000.jpeg?text=WEB+335:+Intro+to+NoSQL+-+Database+Diagram+${i}">`
             gridString += placeholder
         }
