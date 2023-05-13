@@ -27,10 +27,10 @@ Description: Express.js Output for Portfolio API Unit Tests Page
     <!-- Navigation Bar -->
     <%- include('./partials/_header.ejs') %>
 
-    <h2>WEB 335: Introduction to NoSQL - Database Diagrams</h2>
+    <h2 style="margin-left: 80px;">WEB 335: Introduction to NoSQL - Database Diagrams</h2>
 
     <!-- API Unit Tests Page Main Content -->
-    <main id="databases" class="grid-container">
+    <main id="databases" class="grid-container" style="grid-gap: 40px; margin-bottom: 80px; grid-template-rows: repeat(2, 50% [row-start]);">
         
     </main>
 
@@ -41,18 +41,44 @@ Description: Express.js Output for Portfolio API Unit Tests Page
         let gridString = ""
 
         // Assignment 2.2
-        gridString += `<img src="/images/database_diagrams/2.2-1.png" height="200" alt="Database Diagram for Assignment 2.2">`
-        gridString += `<img src="/images/database_diagrams/2.2-2.png" height="200" alt="Database Diagram for Assignment 2.2">`
+        gridString += `<div style="display: flex; flex-direction: column; text-align: center">
+            <a href="/images/database_diagrams/2.2-1.png" target="_blank"><img src="/images/database_diagrams/2.2-1.png" height="200" alt="Database Diagram for Assignment 2.2"></a>
+            Assignment 2.2
+            </div>`
+
+        gridString += `<div style="display: flex; flex-direction: column; text-align: center">
+            <a href="/images/database_diagrams/2.2-2.png" target="_blank"><img src="/images/database_diagrams/2.2-2.png" height="200" alt="Database Diagram for Assignment 2.2"></a>
+            Assignment 2.2
+            </div>`
 
         // Assignment 3.2
-        gridString += `<img src="/images/database_diagrams/3.2-1.png" width="500" alt="Database Diagram for Assignment 3.2">`
-        gridString += `<img src="/images/database_diagrams/3.2-2.png" height="200" alt="Database Diagram for Assignment 3.2">`
+        gridString += `
+        <div style="display: flex; flex-direction: column; text-align: center">
+            <a href="/images/database_diagrams/3.2-1.png" target="_blank"><img src="/images/database_diagrams/3.2-1.png" width="500" alt="Database Diagram for Assignment 3.2"></a>
+            Assignment 3.2
+        </div>`
 
-        // Add 9 placeholders to the Databases grid.
-        for(let i = 5; i < 10; i++) {
-            let placeholder = `<img src="https://via.placeholder.com/300x200/cccccc/000000.jpeg?text=WEB+335:+Intro+to+NoSQL+-+Database+Diagram+${i}">`
-            gridString += placeholder
-        }
+        gridString += `<div style="display: flex; flex-direction: column; text-align: center">
+            <a href="/images/database_diagrams/3.2-2.png" target="_blank"><img src="/images/database_diagrams/3.2-2.png" height="200" alt="Database Diagram for Assignment 3.2"></a>
+            Assignment 3.2
+        </div>`
+
+        // Add placeholders to the Databases grid.
+        // for(let i = 7; i < 10; i++) {
+        //     let placeholder = `<img src="https://via.placeholder.com/300x200/cccccc/000000.jpeg?text=WEB+335:+Intro+to+NoSQL+-+Database+Diagram+${i}">`
+        //     gridString += placeholder
+        // }
+
+        // Assignment 8.2
+        gridString += `<div style="display: flex; flex-direction: column; text-align: center">
+            <a href="/images/database_diagrams/8.2-1.png" target="_blank"><img src="/images/database_diagrams/8.2-1.png" height="200" alt="ORD for Assignment 8.2"></a>
+            Assignment 8.2: ORD
+        </div>`
+
+        gridString += `<div style="display: flex; flex-direction: column; text-align: center">
+            <a href="/images/database_diagrams/8.2-2.png" target="_blank"><img src="/images/database_diagrams/8.2-2.png" width="450" alt="NDD for Assignment 8.2"></a>
+            Assignment 8.2: NDD
+        </div>`
 
         document.getElementById("databases").innerHTML = gridString
     </script>

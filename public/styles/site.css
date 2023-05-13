@@ -87,7 +87,7 @@ nav, footer {
 .grid-container {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     margin: 0 auto;
     grid-template-columns: repeat(3, 30% [col-start]);
     grid-template-rows: repeat(3, 30% [row-start]);
