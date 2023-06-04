@@ -68,6 +68,12 @@ app.get('/tests', (req, res) => {
     })
 })
 
+app.get('/devops', (req, res) => {
+    res.render('devops-presentations', {
+        title: 'DevOps Presentations'
+    })
+})
+
 
 /**
  * Starts the server on port 3000.

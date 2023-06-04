@@ -1,0 +1,37 @@
+<!-- 
+============================================
+Title: index.ejs
+Author: Erin Brady
+Date: 2 June 2023
+Description: Express.js Output for DevOps Presentations Page
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Unica+One&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/styles/site.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <%- include('./partials/_header.ejs') %>
+
+    
+    <!-- Projects Page Main Content -->
+    <main class="grid-container">
+        <div class="card">
+            <video controls autoplay reload="none" style="width: 1000px;">
+                <source src="/devops-presentations/presentation1.2.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </main>
