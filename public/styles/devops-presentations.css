@@ -1,0 +1,24 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "devops1-2 devops2-2";
+    width: 95%;
+    margin: 5% auto;
+}
+
+.devops1-2 {
+    grid-area: devops1-2;
+}
+
+.devops2-2 {
+    grid-area: devops2-2;
+}
+
+.card {
+    width: 100%;
+    height: fit-content;
+}
+
+video {
+    width: 100% !important;
+}
