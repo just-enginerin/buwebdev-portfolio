@@ -1,9 +1,22 @@
-.grid-container {
+.devops-grid-container {
     display: grid;
     grid-template-areas:
-    "devops1-2 devops2-2";
-    width: 95%;
+    "devops1-2 devops2-2"
+    "devops3-2 .";
+    width: 90%;
     margin: 5% auto;
+    row-gap: 10px;
+    column-gap: 50px;
+}
+
+.card {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
 }
 
 .devops1-2 {
@@ -14,11 +27,10 @@
     grid-area: devops2-2;
 }
 
-.card {
-    width: 100%;
-    height: fit-content;
+.devops3-2 {
+    grid-area: devops3-2;
 }
 
 video {
-    width: 100% !important;
+    width: 90% !important;
 }
