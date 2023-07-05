@@ -3,7 +3,7 @@
     grid-template-areas:
     "devops1-2 devops2-2"
     "devops3-2 devops4-2"
-    "devops5-2 .";
+    "devops5-2 devops6-2";
     width: 90%;
     margin: 5% auto;
     row-gap: 10px;
@@ -38,6 +38,10 @@
 
 .devops5-2 {
     grid-area: devops5-2;
+}
+
+.devops6-2 {
+    grid-area: devops6-2;
 }
 
 video {
