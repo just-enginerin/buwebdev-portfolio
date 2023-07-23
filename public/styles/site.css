@@ -23,12 +23,16 @@ body {
 
 /* Navbar Styles */
 nav, footer {
-    width: 100vw - 60px;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
     align-items: center;
     background-color: var(--primary-color);
+}
+
+nav {
+    padding: 15px;
 }
 
 #logo {
@@ -91,8 +95,7 @@ nav, footer {
     margin: 0 auto;
     grid-template-columns: repeat(3, 30% [col-start]);
     grid-template-rows: repeat(3, 30% [row-start]);
-    grid-gap: 5%;
-    
+    overflow-y: auto;
 }
 
 .col {
@@ -159,10 +162,13 @@ button:hover {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
     font-size: 14px;
     background-color: var(--primary-color);
     color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px 15px;
 }
 
 footer a {

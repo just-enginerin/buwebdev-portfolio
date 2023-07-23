@@ -10,7 +10,6 @@ Description: Portfolio: Styling for Projects page
 .grid-container {
     grid-auto-flow: row;
     place-items: center;
-    column-gap: 20px;
     row-gap: 50px;
     margin: 10px auto 80px;
 }
