@@ -9,60 +9,82 @@ Description: Express.js Output for Portfolio Projects Page
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title><%= title %></title>
+	<head>
+		<meta charset="UTF-8" />
+		<title><%= title %></title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Unica+One&display=swap" rel="stylesheet">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Unica+One&display=swap"
+			rel="stylesheet" />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="/styles/site.css">
-    <link rel="stylesheet" href="/styles/projects.css">
-</head>
-<body>
+		<!-- Custom Styles -->
+		<link rel="stylesheet" href="/styles/site.css" />
+		<link rel="stylesheet" href="/styles/projects.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<%- include('./partials/_header.ejs') %>
 
-    <!-- Navigation Bar -->
-    <%- include('./partials/_header.ejs') %>
+		<!-- Projects Page Main Content -->
+		<main class="grid-container">
+			<div class="card">
+				<a href="https://just-enginerin.github.io/web-231/" target="_blank"
+					>Coursework for WEB 231: Enterprise JavaScript I</a
+				>
+			</div>
+			<div class="card">
+				<a href="https://just-enginerin.github.io/web-330/" target="_blank"
+					>Coursework for WEB 330: Enterprise JavaScript II</a
+				>
+			</div>
+			<div class="card">
+				<a href="https://brady-pets-r-us.onrender.com/" target="_blank"
+					>WEB 340: Node.js - Capstone Project: Pets-R-Us</a
+				>
+			</div>
+			<div class="card">
+				<a
+					href="https://brady-web420-capstone.onrender.com/api-docs/#/Teams"
+					target="_blank"
+					>WEB 420: RESTful APIs - Capstone Project: Teams API</a
+				>
+			</div>
+			<div class="card">
+				<a
+					href="https://just-enginerin.github.io/gpa-calculator/"
+					target="_blank"
+					>WEB 425: Angular with TypeScript - GPA Calculator App</a
+				>
+			</div>
+			<div class="card">
+				<a
+					href="https://just-enginerin.github.io/in-n-out-books/"
+					target="_blank"
+					>WEB 425: Angular with TypeScript - In-N-Out Books</a
+				>
+			</div>
+			<div class="card">
+				<a href="https://just-enginerin.github.io/loan-app/" target="_blank"
+					>WEB 425: Angular with TypeScript - Loan App</a
+				>
+			</div>
+			<div class="card">
+				<a href="https://nodebucket-0b46.onrender.com" target="_blank"
+					>WEB 450: Mastering the MEAN Stack Bootcamp - NodeBucket</a
+				>
+			</div>
+			<div class="card">
+				<a href="https://team3-bcrs.onrender.com/" target="_blank"
+					>WEB 450: Mastering the MEAN Stack Bootcamp - Bob's Computer Repair
+					Shop</a
+				>
+			</div>
+		</main>
 
-    <!-- Projects Page Main Content -->
-    <main class="grid-container">
-        <div class="card">
-            <a href="https://just-enginerin.github.io/web-231/" target="_blank">Coursework for WEB 231: Enterprise JavaScript I</a>
-        </div>
-        <div class="card">
-            <a href="https://just-enginerin.github.io/web-330/" target="_blank">Coursework for WEB 330: Enterprise JavaScript II</a>
-        </div>
-        <div class="card">
-            <a href="https://brady-pets-r-us.onrender.com/" target="_blank">WEB 340: Node.js - Capstone Project: Pets-R-Us</a>
-        </div>
-        <div class="card">
-            <a href="https://brady-web420-capstone.onrender.com/api-docs/#/Teams" target="_blank">WEB 420: RESTful APIs - Capstone Project: Teams API</a>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/300x160/cccccc/000000.jpeg?text=WEB+425:+Angular+with+TypeScript+-+Composer+App">
-        </div>
-        <div class="card">
-            <a href="https://just-enginerin.github.io/gpa-calculator/" target="_blank">WEB 425: Angular with TypeScript - GPA Calculator App</a>
-        </div>
-        <div class="card">
-            <a href="https://just-enginerin.github.io/in-n-out-books/" target="_blank">WEB 425: Angular with TypeScript - In-N-Out Books</a>
-        </div>
-        <div class="card">
-            <a href="https://just-enginerin.github.io/loan-app/" target="_blank">WEB 425: Angular with TypeScript - Loan App</a>
-        </div>
-        <div class="card">
-            <a href="https://nodebucket-0b46.onrender.com" target="_blank">WEB 450: Mastering the MEAN Stack Bootcamp - NodeBucket</a>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/300x160/cccccc/000000.jpeg?text=WEB+450:+MEAN+Stack+-+Bob's+Computer+Repair+Shop">
-        </div>
-    
-    </main>
-
-    <!-- Footer -->
-    <%- include('./partials/_footer.ejs') %>
-</body>
+		<!-- Footer -->
+		<%- include('./partials/_footer.ejs') %>
+	</body>
 </html>
